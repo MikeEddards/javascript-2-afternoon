@@ -15,8 +15,10 @@
 */
 
 //Code here
-
-
+var me = {name: 'Mike Eddards',
+          age: 34
+}
+// alert(me.name)
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +28,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: 'Metallica',
+  food: 'Pizza',
+  person: 'My Dad',
+  book: 'Lee Childs books',
+  movie: 'Saving Privet Ryan',
+  holiday: 'Christmas'
+}
 
 
 /*
@@ -35,8 +44,8 @@
 */
 
 //Code here
-
-
+favoriteThings.car = '300zx'
+favoriteThings.brand = 'ASUS'
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -44,7 +53,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 
 ////////// PROBLEM 3 //////////
@@ -58,15 +68,18 @@
 */
 
 //Code here
+var backPack = {}
 
-
+var item = 'firstPocket'
+backPack[item] = 'chapstick'
+backPack.color = 'black'
 
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
-
+// alert(backPack)
 
 
 /*
@@ -76,7 +89,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -99,8 +112,8 @@ var user2 = {
 */
 
 //Code Here
-
-
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
@@ -122,7 +135,7 @@ var user2 = {
 */
 
 //Code Here
-
+var methodCollection = {}
 
 
 /*
@@ -131,15 +144,19 @@ var user2 = {
 */
 
 //Code Here
-
-
+methodCollection.alertHello = function() {
+  alert('hello')
+}
+methodCollection.logHello = function(){
+  console.log('hello')
+}
 
 /*
   Now call your alertHello and logHello methods.
 */
 
 //Code Here
-
+// methodCollection.alertHello()
 
 
 ////////// PROBLEM 6 //////////
@@ -150,7 +167,13 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson(name, birthday, ssn){
+  return {
+    name,
+    birthday,
+    ssn
+  }
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -162,4 +185,10 @@ var user2 = {
 
 //Code Here
 
-
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {
+    cardNumber,
+    expirationDate,
+    securityCode
+  }
+}
